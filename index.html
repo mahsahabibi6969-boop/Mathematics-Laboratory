@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>آزمایشگاه مجموعه‌ها | Math Lab</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🔢 آزمایشگاه مجموعه‌ها</h1>
+    <p class="desc">
+      در این آزمایشگاه می‌توانید دو مجموعه وارد کنید تا <b>اجتماع</b>، <b>اشتراک</b> و <b>تفاضل</b> آن‌ها را مشاهده کنید.
+    </p>
+
+    <div class="input-section">
+      <label>مجموعه A:</label>
+      <input id="setA" type="text" placeholder="{1,2,3}">
+      <label>مجموعه B:</label>
+      <input id="setB" type="text" placeholder="{2,3,4}">
+    </div>
+
+    <div class="buttons">
+      <button onclick="calculateUnion()">اجتماع (A ∪ B)</button>
+      <button onclick="calculateIntersection()">اشتراک (A ∩ B)</button>
+      <button onclick="calculateDifference()">تفاضل (A − B)</button>
+    </div>
+
+    <div id="result" class="result"></div>
+
+    <div class="info">
+      <h2>🧠 توضیحات مفاهیم</h2>
+      <p><b>اجتماع (Union):</b> اعضایی که در A یا B یا هر دو وجود دارند.</p>
+      <p><b>اشتراک (Intersection):</b> اعضایی که در هر دو مجموعه مشترک‌اند.</p>
+      <p><b>تفاضل (Difference):</b> اعضایی که در A هستند ولی در B نیستند.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
